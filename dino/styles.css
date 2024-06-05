@@ -1,0 +1,84 @@
+.atraccion {
+    letter-spacing: 2px; /* Aumenta el espacio entre letras */
+    border: 2px solid #8B4513; /* Borde sólido de 2px con color marrón */
+}
+
+#grilla{
+    display: grid;
+    grid-template-areas:
+    "nav header header"
+    "nav carnivoros herbivoros"
+    "nav voladores acuaticos"
+    "nav footer footer";
+    grid-template-columns: 0.5fr 2fr 2fr; /*dos columnas de igual tamaño*/
+    grid-template-rows: auto;/*filas que se ajustan al contenido*/
+    grid-gap: 10px;
+    grid-row-gap: 15px;
+    text-align: center;
+}
+
+.header{
+    grid-area: header;
+      padding: 10px;
+      
+    }
+
+.nav{
+    grid-area: nav;
+      padding: 10px;
+    }
+
+.dinosaur-section{
+    grid-area: dinosaurio-section;
+     background-color: brown;
+      padding: 10px;
+    }
+
+.footer{
+    grid-area: footer; 
+     padding: 10px;
+    }
+
+#carnivoros{
+    grid-area:carnivoros;
+}
+
+.carnivoros-section{
+    background-color: rgb(153, 12, 12);
+}
+
+#rex{
+    font-size: 24px; /*tamaño de letra*/
+    color: #FF4500; /* Un color llamativo, como naranja rojizo */
+}
+
+#herbivoros{
+    grid-area:herbivoros;
+}
+
+.herbivoros-section{
+    background-color: greenyellow;
+}
+
+#triceratops{
+    font-weight: bold; /* Negrita */
+    text-decoration: underline; /* Subrayado */
+}
+
+#acuaticos{
+    grid-area:acuaticos;
+}
+
+.acuaticos-section{
+    font-style: italic; /* Cursiva */
+    color: blue; /* Azul */
+}
+
+#voladores{
+    grid-area:voladores;
+}
+
+.valadores-section{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    background-color: aquamarine;
+}

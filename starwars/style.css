@@ -1,0 +1,49 @@
+
+.profile{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "section sectionb"
+    "section sectionb";
+    grid-template-columns: 1fr 1fr; /*dos columnas de igual tamaño*/
+    grid-template-rows: auto;/*filas que se ajustan al contenido*/
+    grid-gap: 10px;
+    text-align: center;
+}
+.header{grid-area: header;padding: 10px;}
+.section{grid-area: section;padding: 10px;}
+.sectionb{grid-area: sectionb; padding: 10px;}
+
+.imperio{
+    background-color: red;
+}
+
+.rebeldes{
+    background-color: blue;
+}
+
+#darth{
+    font-size:20px;
+}
+
+#luke{
+font-style:italic;
+}
+
+.soldados{
+    border: solid;
+    letter-spacing: normal;
+}
+
+.apoyo{
+    text-align: center;
+}
+
+.naves{
+    
+    text-transform: uppercase;
+}
+
+.droides{
+    text-align: center;
+}
